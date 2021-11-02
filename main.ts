@@ -2,6 +2,7 @@ input.onButtonPressed(Button.AB, function () {
     music.setVolume(255)
 })
 basic.forever(function () {
+    // clears screen
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -9,8 +10,11 @@ basic.forever(function () {
         . . . . .
         . . . . .
         `)
+    // only runs if there is an earthquake or the test button is pressed (button B)
     if (input.isGesture(Gesture.Shake) || input.buttonIsPressed(Button.B)) {
+        // stops repeating when button A is pressed 
         while (!(input.buttonIsPressed(Button.A))) {
+            // displays image and plays alert tone 4 times
             for (let index = 0; index < 4; index++) {
                 basic.showLeds(`
                     . . # . .
