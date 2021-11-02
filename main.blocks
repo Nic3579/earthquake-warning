@@ -1,25 +1,25 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="px9tj=Pw.nM#YBw$:@4@" x="0" y="0"><statement name="HANDLER"><block type="device_show_leds" id="vM4FpR%u)E,~Q;c=bXj+"><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="~]Vk^Kp%d+k6=#-!KP1b">variable</variable><variable id="`oJ8r(i$ZmXIP/JBV!Xo">reset</variable></variables><block type="device_forever" id="px9tj=Pw.nM#YBw$:@4@" x="0" y="0"><statement name="HANDLER"><block type="device_show_leds" id="vM4FpR%u)E,~Q;c=bXj+"><field name="LEDS">`
         . . . . . 
         . . . . . 
         . . . . . 
         . . . . . 
         . . . . .
-        `</field><next><block type="controls_if" id=",5CZoVxrN;]V-4j;nhEl"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="G695vZbYrZg5[LSB{jCP"><field name="OP">OR</field><value name="A"><block type="deviceisgesture" id="ReN[+uRPjFA_sS92aTVA"><field name="gesture">Gesture.Shake</field></block></value><value name="B"><block type="device_get_button2" id=":A1k~oWbS3BTsmH3A^3m"><field name="NAME">Button.B</field></block></value></block></value><statement name="DO0"><block type="controls_repeat_ext" id="[OEKEq!]A)M(=KfbM/HP"><value name="TIMES"><shadow type="math_whole_number" id="Yp@JUk4Y]qjQ7!g:hg[V"><field name="NUM">4</field></shadow></value><statement name="DO"><block type="device_show_leds" id="ryYJE(K1ao`P=3C-[R6$"><field name="LEDS">`
+        `</field><next><block type="controls_if" id=",5CZoVxrN;]V-4j;nhEl"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="G695vZbYrZg5[LSB{jCP"><field name="OP">OR</field><value name="A"><block type="deviceisgesture" id="ReN[+uRPjFA_sS92aTVA"><field name="gesture">Gesture.Shake</field></block></value><value name="B"><block type="device_get_button2" id=":A1k~oWbS3BTsmH3A^3m"><field name="NAME">Button.B</field></block></value></block></value><statement name="DO0"><block type="device_while" id="2d@ADKQ`|YYKGesZrVq="><value name="COND"><shadow type="logic_boolean" id="KC#}.VCTjx8d=t|:|f:~"><field name="BOOL">FALSE</field></shadow><block type="logic_negate" id="aZX]EVtJUi)1AymD5J)q"><value name="BOOL"><block type="device_get_button2" id="?yIh*iYH_ETb;#k9s[Kk"><field name="NAME">Button.A</field></block></value></block></value><statement name="DO"><block type="controls_repeat_ext" id="k*d30;F,k4q`yGfy$2f,"><value name="TIMES"><shadow type="math_whole_number" id="{X,ZJa1iSD]M:^1.%%ne"><field name="NUM">4</field></shadow></value><statement name="DO"><block type="device_show_leds" id="ryYJE(K1ao`P=3C-[R6$"><field name="LEDS">`
         . . # . . 
         . # . # . 
         # . . . # 
         . # . # . 
         . . # . .
-        `</field><next><block type="device_play_note" id="e{Nv|`(!hFl4k{NKnuKP"><value name="note"><shadow type="device_note" id="C#W5ObhqoO^I,;ys?L4V"><field name="name">262</field></shadow></value><value name="duration"><shadow type="device_beat" id="Zj=xy$PT5Nrg`XB9JnZm"><field name="fraction">BeatFraction.Whole</field></shadow></value><next><block type="device_show_leds" id="L1RnmUB2Z.,SNw}PbTs9"><field name="LEDS">`
+        `</field><next><block type="device_play_note" id=".lu)aRE6u(M10(sSQVXb"><value name="note"><shadow type="device_note" id="OVpy`bgRBL8*$xe00I|o"><field name="name">262</field></shadow></value><value name="duration"><shadow type="device_beat" id="OvOi1vKO%8%GK2Ld~nrh"><field name="fraction">BeatFraction.Half</field></shadow></value><next><block type="device_show_leds" id="L1RnmUB2Z.,SNw}PbTs9"><field name="LEDS">`
         . . . . . 
         . . . . . 
         . . . . . 
         . . . . . 
         . . . . .
-        `</field></block></next></block></next></block></statement></block></statement><statement name="ELSE"><block type="device_show_leds" id="FXY4Ry~l$!(rX7FrE:O?"><field name="LEDS">`
+        `</field></block></next></block></next></block></statement><next><block type="device_print_message" id=":%3.hO3gIA7UyBhdZ/g!"><value name="text"><shadow type="text" id="IIl|6Qu7p6kkPBZ]bdG["><field name="TEXT">ALERT: *EARTHQUAKE*</field></shadow></value></block></next></block></statement><next><block type="playMelody" id="Ul(j6sp|!z57x*#.)yoM"><value name="melody"><shadow type="melody_editor" id=":JrB:`*agMksv+2HkOPI"><field name="melody">"E F - E F - B C "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="Id}~SX)K=Y?EJtWSfveE"><mutation min="40" max="500" label="Tempo" precision="0"/><field name="SLIDER">120</field></shadow></value><next><block type="device_print_message" id="puNr[rAcFJ_]%{tr9jr_"><value name="text"><shadow type="text" id=":%i*dAI,_h2`q01eUu:,"><field name="TEXT">alert over</field></shadow></value></block></next></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="FXY4Ry~l$!(rX7FrE:O?"><field name="LEDS">`
         . . . . . 
         . . . . . 
         . . # . . 
         . . . . . 
         . . . . .
-        `</field></block></statement></block></next></block></statement></block></xml>
+        `</field></block></statement><next><block type="device_pause" id="WE$gEx}Eh3]+LO[$%/jP"><value name="pause"><shadow type="timePicker" id="c]9}66rPu#`0H*O1pR/F"><field name="ms">100</field></shadow></value></block></next></block></next></block></statement></block><block type="device_button_event" id="e(*PtRuaW%bl.KYTqg5d" x="-218" y="943"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="synth_set_volume" id="y}bC:(eZY%r[:qg]iei2"><value name="volume"><shadow type="math_number_minmax" id="[)DbtT1wp^9mALZv6Y3_"><mutation min="0" max="255" label="Volume" precision="0"/><field name="SLIDER">255</field></shadow></value></block></statement></block></xml>
