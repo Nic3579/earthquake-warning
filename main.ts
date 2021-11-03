@@ -1,3 +1,4 @@
+// sets volume to correct level
 input.onButtonPressed(Button.AB, function () {
     music.setVolume(255)
 })
