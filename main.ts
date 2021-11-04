@@ -1,6 +1,8 @@
 // sets volume to correct level
 input.onButtonPressed(Button.AB, function () {
     music.setVolume(255)
+    // provides the user a visual confirmation  that the volume has been set
+    basic.showString("Volume set")
 })
 basic.forever(function () {
     // clears screen
@@ -13,7 +15,7 @@ basic.forever(function () {
         `)
     // only runs if there is an earthquake or the test button is pressed (button B)
     if (input.isGesture(Gesture.Shake) || input.buttonIsPressed(Button.B)) {
-        // stops repeating when button A is pressed 
+        // stops repeating when button A is pressed
         while (!(input.buttonIsPressed(Button.A))) {
             // displays image and plays alert tone 4 times
             for (let index = 0; index < 4; index++) {
